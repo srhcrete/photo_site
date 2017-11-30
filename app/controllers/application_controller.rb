@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
        return user.user_name
     end
   end
-  
+
 protected
 
   def configure_permitted_parameters
