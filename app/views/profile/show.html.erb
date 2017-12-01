@@ -1,0 +1,11 @@
+<% if current_user %>
+  <h1>Welcome: <%= @user.username  %></h1>
+  <h2>Your Images</h2>
+  <%= link_to('Add Image', new_image_path)  %>
+<% elsif %>
+<h1><%= @user.username  %> Images</h1>
+<% end %>
+
+<% @images.each do |i|  %>
+  <%= image_tag(i.photo) %>
+<% end %>

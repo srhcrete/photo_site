@@ -17,7 +17,8 @@
     <%= current_user.username %> |
     <%= link_to('Logout', destroy_user_session_path, method: :delete) %> |
     <%= link_to('Edit', edit_user_registration_path) %> |
-    <%= link_to('Add Photo', new_image_path) %>
+    <%= link_to('Add Photo', new_image_path) %> |
+    <%= link_to('Profile', profile_path(current_user.id)) %>
   <% else %>
     <%= link_to('Login', new_user_session_path)  %>
   <% end %>
