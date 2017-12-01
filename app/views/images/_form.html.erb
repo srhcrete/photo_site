@@ -1,0 +1,15 @@
+<%= render "layouts/errors", :object => @image %>
+<%= form_for @image do |f| %>
+  <div class="form-group">
+    <%= f.label :photo, class: 'col-sm-2 control-label'  %>
+    <div class="col-sm-6">
+        <%= f.file_field :photo %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, :class => "form-control" %>
+  </div>
+  <%= f.hidden_field(:user_id, :value => current_user.id) %>
+  <%= f.button :Submit, :class => 'btn btn-info' %>
+<% end %>

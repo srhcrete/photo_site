@@ -10,13 +10,14 @@
 
   <header>
    <%= link_to('Home', root_path) %>
-   <h1 id="name">Stack Overflow</h1>
+   <h1 id='name'>Imagrr</h1>
 
   <% if user_signed_in? %>
     <div class='round-image-50'><%= image_tag(current_user.avatar.url(:thumb)) %></div>
     <%= current_user.username %> |
     <%= link_to('Logout', destroy_user_session_path, method: :delete) %> |
-    <%= link_to('Edit', edit_user_registration_path) %>
+    <%= link_to('Edit', edit_user_registration_path) %> |
+    <%= link_to('Add Photo', new_image_path) %>
   <% else %>
     <%= link_to('Login', new_user_session_path)  %>
   <% end %>

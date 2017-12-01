@@ -1,15 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/photo_site/spec/models/user_spec.rb": [
+      "/Users/Guest/Desktop/photo_site/spec/models/image_spec.rb": [
         1,
         null,
         1,
-        2,
-        2,
-        2,
-        2,
-        2,
+        1,
         null
       ],
       "/Users/Guest/Desktop/photo_site/spec/rails_helper.rb": [
@@ -535,6 +531,13 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/photo_site/spec/factories/images.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/photo_site/spec/factories/users.rb": [
         1,
         1,
@@ -556,12 +559,13 @@
         1,
         1,
         null,
-        1,
         null,
         null,
         1,
         null,
         null,
+        1,
+        1,
         null,
         null,
         null,
@@ -582,8 +586,23 @@
       "/Users/Guest/Desktop/photo_site/app/helpers/application_helper.rb": [
         1,
         null
+      ],
+      "/Users/Guest/Desktop/photo_site/app/models/image.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/photo_site/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
       ]
     },
-    "timestamp": 1512068645
+    "timestamp": 1512082459
   }
 }
